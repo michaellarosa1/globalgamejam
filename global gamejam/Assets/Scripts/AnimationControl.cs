@@ -9,6 +9,7 @@ public class AnimationControl : MonoBehaviour
     private int NumberToChange = 1;
     private int Return = 0;
     private bool song;
+    private float cd;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +22,12 @@ public class AnimationControl : MonoBehaviour
     {
         if(song)
         {
-            AnimatorToActive.SetInteger(NameOfParameter, Return);
-            song = false;
+            cd = cd - Time.deltaTime;
+            if(cd <= 0)
+            {
+               song = false;
+               AnimatorToActive.SetInteger(NameOfParameter, Return);
+            }
         }
     }
 
@@ -30,5 +35,6 @@ public class AnimationControl : MonoBehaviour
     {
         AnimatorToActive.SetInteger(NameOfParameter, NumberToChange);
         song = true;
+        cd = 0.1f;
     }
 }
