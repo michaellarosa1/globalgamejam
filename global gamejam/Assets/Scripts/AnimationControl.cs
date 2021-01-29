@@ -35,6 +35,6 @@ public class AnimationControl : MonoBehaviour
     {
         AnimatorToActive.SetInteger(NameOfParameter, NumberToChange);
         song = true;
-        cd = 0.1f;
+        cd = 0.05f;
     }
 }
