@@ -8,6 +8,7 @@ TagManager:
   - Manopola
   - Canvas
   - lv1
+  - lv2
   layers:
   - Default
   - TransparentFX
