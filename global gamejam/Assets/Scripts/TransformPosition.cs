@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TransformPosition : MonoBehaviour
 {
-    public Transform SPW;
+    public string secondLevel;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class TransformPosition : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Trigger"))
         {
-            transform.position = SPW.transform.position;
+            SceneManager.LoadScene(secondLevel);
         }
         
     }

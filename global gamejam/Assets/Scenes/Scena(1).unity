@@ -603,7 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 204be573742d1bd429516d9d96dc9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SPW: {fileID: 393304365}
+  secondLevel: SampleScene
 --- !u!65 &1129078911
 BoxCollider:
   m_ObjectHideFlags: 0
