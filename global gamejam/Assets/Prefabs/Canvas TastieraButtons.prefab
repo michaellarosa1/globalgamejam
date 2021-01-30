@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimatorToActive: {fileID: 0}
   NameOfParameter: Sol
+  Delay: 0.1
 --- !u!1 &6808081984524560980
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimatorToActive: {fileID: 0}
   NameOfParameter: Do1
+  Delay: 0.1
 --- !u!1 &6808081984620541303
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimatorToActive: {fileID: 0}
   NameOfParameter: Mi
+  Delay: 0.1
 --- !u!1 &6808081984738439591
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimatorToActive: {fileID: 0}
   NameOfParameter: La
+  Delay: 0.1
 --- !u!1 &6808081984747263001
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimatorToActive: {fileID: 0}
   NameOfParameter: Fa
+  Delay: 0.1
 --- !u!1 &6808081984854200546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,6 +1050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimatorToActive: {fileID: 0}
   NameOfParameter: Si
+  Delay: 0.1
 --- !u!1 &6808081985300452447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimatorToActive: {fileID: 0}
   NameOfParameter: Re
+  Delay: 0.1
 --- !u!1 &6808081985621160949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,3 +1340,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimatorToActive: {fileID: 0}
   NameOfParameter: Do
+  Delay: 0.1
