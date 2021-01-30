@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EventOnTrigger : MonoBehaviour
+public class EventOnTrigger1 : MonoBehaviour
 {
+    public GameObject soundKey;
     
-    public UnityEvent action;
-    public UnityEvent actionUscita;
     public string TriggerTag;
 
 
@@ -16,17 +15,16 @@ public class EventOnTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag(TriggerTag))
         {
-            if (action != null)action.Invoke();
             
+            soundKey.SetActive(false);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag(TriggerTag))
-        {
-            if (action != null)actionUscita.Invoke();
-            
+        { 
+            soundKey.SetActive(true);
         }
     }
 }
