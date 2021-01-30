@@ -19,7 +19,7 @@ public class TransformPosition : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Trigger"))
+        if (other.gameObject.CompareTag("lv1"))
         {
             SceneManager.LoadScene(secondLevel);
         }
