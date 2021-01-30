@@ -159,7 +159,7 @@ MonoBehaviour:
   Speed: 5
   JumpPow: 10
   animationToChange: {fileID: 311518713}
-  vNameOfParameter: 
+  vNameOfParameter: running
   hNameOfParameter: 
   Jump: 
   Tastiera: {fileID: 1915616781}
