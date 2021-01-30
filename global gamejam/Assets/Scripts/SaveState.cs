@@ -18,6 +18,10 @@ public class SaveState : MonoBehaviour
     public bool risposta10;
     public bool risposta11;
     public bool risposta12;
+    public bool Moneta1;
+    public bool Moneta2;
+    public bool Moneta3;
+    public bool Moneta4;
 
     public Slider timerSlider;
     private float Lv3TimeReset;
@@ -38,6 +42,10 @@ public class SaveState : MonoBehaviour
         risposta10 = GlobalControl.Instance.risposta10;
         risposta11 = GlobalControl.Instance.risposta11;
         risposta12 = GlobalControl.Instance.risposta12;
+        Moneta1 = GlobalControl.Instance.Moneta1;
+        Moneta2 = GlobalControl.Instance.Moneta2;
+        Moneta3 = GlobalControl.Instance.Moneta3;
+        Moneta4 = GlobalControl.Instance.Moneta4;
         timerSlider.maxValue = Lv3TimeReset;
         timerSlider.value = Lv3Timer;
     }
@@ -64,67 +72,11 @@ public class SaveState : MonoBehaviour
             GlobalControl.Instance.risposta10 = false;
             GlobalControl.Instance.risposta11 = false;
             GlobalControl.Instance.risposta12 = false;
+            GlobalControl.Instance.Moneta1 = false;
+            GlobalControl.Instance.Moneta2 = false;
+            GlobalControl.Instance.Moneta3 = false;
+            GlobalControl.Instance.Moneta4 = false;
         }
-    }
-    
-    public void risposta1True()
-    {
-        risposta1 = true;
-    }
-
-    public void risposta2True()
-    {
-        risposta2 = true;
-    }
-
-    public void risposta3True()
-    {
-        risposta3 = true;
-    }
-
-    public void risposta4True()
-    {
-        risposta4 = true;
-    }
-
-    public void risposta5True()
-    {
-        risposta5 = true;
-    }
-
-    public void risposta6True()
-    {
-        risposta6 = true;
-    }
-
-    public void risposta7True()
-    {
-        risposta7 = true;
-    }
-
-    public void risposta8True()
-    {
-        risposta8 = true;
-    }
-
-    public void risposta9True()
-    {
-        risposta9 = true;
-    }
-
-    public void risposta10True()
-    {
-        risposta10 = true;
-    }
-
-    public void risposta11True()
-    {
-        risposta11 = true;
-    }
-
-    public void risposta12True()
-    {
-        risposta12 = true;
     }
 
     public void saveState()
@@ -142,10 +94,14 @@ public class SaveState : MonoBehaviour
         GlobalControl.Instance.risposta10 = risposta10;
         GlobalControl.Instance.risposta11 = risposta11;
         GlobalControl.Instance.risposta12 = risposta12;
+        GlobalControl.Instance.Moneta1 = Moneta1;
+        GlobalControl.Instance.Moneta2 = Moneta2;
+        GlobalControl.Instance.Moneta3 = Moneta3;
+        GlobalControl.Instance.Moneta4 = Moneta4;
     }   
 
     public void ReloadLv3()
     {
-        SceneManager.LoadScene("salva");
+        SceneManager.LoadScene("Lv3");
     }
 }

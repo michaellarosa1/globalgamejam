@@ -19,6 +19,10 @@ public class GlobalControl : MonoBehaviour
     public bool risposta10;
     public bool risposta11;
     public bool risposta12;
+    public bool Moneta1;
+    public bool Moneta2;
+    public bool Moneta3;
+    public bool Moneta4;
 
     void Awake ()   
        {
