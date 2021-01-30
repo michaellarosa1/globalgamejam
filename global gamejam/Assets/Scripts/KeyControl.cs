@@ -7,14 +7,13 @@ public class KeyControl : MonoBehaviour
     public Animator AnimatorToActive;
     public string NameOfParameterBool;
     public GameObject Light;
-    public GameObject trapdoorsound;
     public GameObject triggerloader;
 
     private void OnEnable()
     {
         AnimatorToActive.SetBool(NameOfParameterBool, true);
         Light.SetActive(true);
-        trapdoorsound.SetActive(true);
+        
         triggerloader.SetActive(true);
         
     }
