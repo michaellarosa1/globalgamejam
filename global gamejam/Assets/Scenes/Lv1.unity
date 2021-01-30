@@ -151,7 +151,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.630785, g: 0.7874865, b: 0.990566, a: 1}
-  m_Intensity: 4.3
+  m_Intensity: 3.04
   m_Range: 7.68
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -361,8 +361,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.630785, g: 0.7874865, b: 0.990566, a: 1}
-  m_Intensity: 2.06
-  m_Range: 5.24
+  m_Intensity: 4.84
+  m_Range: 6.59
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -417,13 +417,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209394603}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 5.049, z: 3.74}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.21, y: 3.82, z: 1.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &366784104
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +583,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.630785, g: 0.7874865, b: 0.990566, a: 1}
-  m_Intensity: 4.3
+  m_Intensity: 3.04
   m_Range: 7.68
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -640,7 +640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683565300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.222, y: 5.049, z: -3.711}
+  m_LocalPosition: {x: -2.31, y: 5.049, z: -3.679}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1977,6 +1977,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3120462469276735038, guid: 426f45243b2246441bf6dc1ccdf863e2,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3627073678982504893, guid: 426f45243b2246441bf6dc1ccdf863e2,
         type: 3}
       propertyPath: m_LocalRotation.x
