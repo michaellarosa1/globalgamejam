@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class TransformPosition : MonoBehaviour
 {
     public string secondLevel;
+    public string thirdLevel;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,12 @@ public class TransformPosition : MonoBehaviour
         {
             SceneManager.LoadScene(secondLevel);
         }
+        if (other.gameObject.CompareTag("lv2"))
+        {
+            SceneManager.LoadScene(thirdLevel);
+        }
         
     }
+
+    
 }
