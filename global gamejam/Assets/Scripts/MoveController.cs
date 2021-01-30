@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class MoveController : MonoBehaviour
     private Rigidbody rb;
     private float JumpCd = 2f;
     private float JumpCdReset;
+    public GameObject Tastiera;
 
     // Start is called before the first frame update
     void Start()
@@ -39,5 +41,18 @@ public class MoveController : MonoBehaviour
         }
         JumpCd = JumpCd - Time.deltaTime;
         animationToChange.SetBool(Jump, false);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Canvas"))
+        {
+            Tastiera.SetActive(true);
+        }
+        
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        Tastiera.SetActive(false);
     }
 }
