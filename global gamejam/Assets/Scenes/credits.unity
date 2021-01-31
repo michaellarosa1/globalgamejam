@@ -284,7 +284,8 @@ MonoBehaviour:
     deleted_user_5093904\n\n (https://freesound.org/people/deleted_user_5093904/),
     kyles (https://freesound.org/people/kyles/), BroumBroum\n\n (https://freesound.org/people/broumbroum/),
     mcmikai (https://freesound.org/people/mcmikai/)\r\n\nRiddles of the last level:
-    https://www.frasimania.it/indovinelli-logici/\n\ncharacter : https://www.mixamo.com/#/?page=1&query=jasper&type=Character"
+    https://www.frasimania.it/indovinelli-logici/\n\ncharacter : https://www.mixamo.com/#/?page=1&query=jasper&type=Character\n\nskybox:
+    https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633"
 --- !u!222 &568080827
 CanvasRenderer:
   m_ObjectHideFlags: 0
