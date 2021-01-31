@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDirections: 2
-  acceleration: {x: 1000, y: 1000}
-  sensitivity: {x: 1000, y: -1000}
+  acceleration: {x: 500, y: 500}
+  sensitivity: {x: 500, y: -500}
   maxVerticalAngleFromHorizon: 60
   inputLagPeriod: 0
 --- !u!114 &1816604708565717565
@@ -224,8 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDirections: 1
-  acceleration: {x: 1000, y: 1000}
-  sensitivity: {x: 1000, y: -1000}
+  acceleration: {x: 500, y: 500}
+  sensitivity: {x: 500, y: -500}
   maxVerticalAngleFromHorizon: 45
   inputLagPeriod: 0
 --- !u!114 &311518709
