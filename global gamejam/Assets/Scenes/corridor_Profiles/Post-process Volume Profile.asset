@@ -115,7 +115,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 2.11
+    value: 3.31
   contrast:
     overrideState: 0
     value: 0
@@ -1393,7 +1393,7 @@ MonoBehaviour:
     value: 0
   intensity:
     overrideState: 1
-    value: 4
+    value: 1.94
   color:
     overrideState: 0
     value: {r: 0, g: 0, b: 0, a: 1}
