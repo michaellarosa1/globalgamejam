@@ -214,6 +214,26 @@ public class SaveStateLv3 : MonoBehaviour
         risposta12 = true;
     }
 
+    public void Moneta1True()
+    {
+        Moneta1 = true;
+    }
+
+    public void Moneta2True()
+    {
+        Moneta2 = true;
+    }
+
+    public void Moneta3True()
+    {
+        Moneta3 = true;
+    }
+
+    public void Moneta4True()
+    {
+        Moneta4 = true;
+    }
+
     public void saveState()
     {
         GlobalControl.Instance.Lv3Timer = Lv3Timer;
