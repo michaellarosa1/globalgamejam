@@ -12343,7 +12343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676907706164b9b42a81e3925f7b56e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScenesName: Lv3
+  ScenesName: GameOverLv3
 --- !u!65 &825144859
 BoxCollider:
   m_ObjectHideFlags: 0
