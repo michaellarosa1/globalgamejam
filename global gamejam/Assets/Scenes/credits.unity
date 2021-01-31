@@ -241,8 +241,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.001236, y: -875}
-  m_SizeDelta: {x: 1088.7524, y: 836.21326}
+  m_AnchoredPosition: {x: -0.001236, y: -1426}
+  m_SizeDelta: {x: 1088.7524, y: 1025.5817}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568080826
 MonoBehaviour:
@@ -276,12 +276,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nDevelopers: Davide Wu, Edoardo Poma, Michael La Rosa \r\n\n3D Artists:
+  m_Text: "Developers: Davide Wu, Edoardo Poma, Michel La Rosa \r\n\n3D Artists:
     Ana-Maria Ivaylova Petrova, Maria Jos\xE8 Chiassoni Casareto\r\n\nGame Designer:
     Alessandra Ettori\r\n\nStorywriter: Alessandra Ettori\r\n\nSound Designer: Michael
-    La Rosa\r\n\nGraphic Designer: Alessandra Ettori\r\n\nSounds: gregswinford (https://freesound.org/people/gregswinford/),
-    deleted_user_5093904\n\n(https://freesound.org/people/deleted_user_5093904/)\r\n\nhttps://freesound.org/people/kyles/\n\nRiddles
-    of the last level: https://www.frasimania.it/indovinelli-logici/"
+    La Rosa\n\r\nGraphic Designer: Alessandra Ettori\r\n\nVoice Over: Alessandra
+    Ettori\r\n\nProst Processing: Michael La Rosa\r\n\nSounds: gregswinford (https://freesound.org/people/gregswinford/),
+    deleted_user_5093904\n\n (https://freesound.org/people/deleted_user_5093904/),
+    kyles (https://freesound.org/people/kyles/), BroumBroum\n\n (https://freesound.org/people/broumbroum/),
+    mcmikai (https://freesound.org/people/mcmikai/)\r\n\nRiddles of the last level:
+    https://www.frasimania.it/indovinelli-logici/"
 --- !u!222 &568080827
 CanvasRenderer:
   m_ObjectHideFlags: 0
