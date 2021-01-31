@@ -27,6 +27,7 @@ public class SaveState : MonoBehaviour
     
     void Start()
     {
+        Lv3TimeReset = GlobalControl.Instance.Lv3TimeReset;
         Lv3Timer = GlobalControl.Instance.Lv3Timer;
         risposta1 = GlobalControl.Instance.risposta1;
         risposta2 = GlobalControl.Instance.risposta2;
@@ -71,6 +72,7 @@ public class SaveState : MonoBehaviour
             GlobalControl.Instance.Moneta2 = false;
             GlobalControl.Instance.Moneta3 = false;
             GlobalControl.Instance.Moneta4 = false;
+            GlobalControl.Instance.Lv3Timer = Lv3Timer;
         }
     }
 

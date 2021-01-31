@@ -7,6 +7,7 @@ public class GlobalControl : MonoBehaviour
         public static GlobalControl Instance;
         
     public float Lv3Timer;
+    public float Lv3TimeReset;
     public bool risposta1;
     public bool risposta2;
     public bool risposta3;

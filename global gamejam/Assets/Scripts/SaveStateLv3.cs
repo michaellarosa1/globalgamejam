@@ -20,7 +20,7 @@ public class SaveStateLv3 : MonoBehaviour
 
     public string NameOfParameterBool;
 
-    public float Lv3Timer;
+    
     public bool risposta1;
     public bool risposta2;
     public bool risposta3;
@@ -38,15 +38,17 @@ public class SaveStateLv3 : MonoBehaviour
     public bool Moneta3;
     public bool Moneta4;
 
-    public Slider timerSlider;
-
     public GameObject DoorLv3EndObj;
+    public GameObject Clessidra;
     
+    private float Lv3Timer;
     private float Lv3TimeReset;
+    private float ClessidraScale;
     // Start is called before the first frame update
     
     void Start()
     {
+        Lv3TimeReset = GlobalControl.Instance.Lv3TimeReset;
         Lv3Timer = GlobalControl.Instance.Lv3Timer;
         risposta1 = GlobalControl.Instance.risposta1;
         risposta2 = GlobalControl.Instance.risposta2;
@@ -64,15 +66,14 @@ public class SaveStateLv3 : MonoBehaviour
         Moneta2 = GlobalControl.Instance.Moneta2;
         Moneta3 = GlobalControl.Instance.Moneta3;
         Moneta4 = GlobalControl.Instance.Moneta4;
-        timerSlider.maxValue = Lv3TimeReset;
-        timerSlider.value = Lv3Timer;
     }
 
     // Update is called once per frame
     void Update()
     {
         Lv3Timer = Lv3Timer - Time.deltaTime;
-        timerSlider.value = Lv3Timer;
+        ClessidraScale = Lv3Timer / Lv3TimeReset;
+        Clessidra.transform.localScale = new Vector3(1,ClessidraScale,1);
 
         if(risposta1)
         {
@@ -163,6 +164,7 @@ public class SaveStateLv3 : MonoBehaviour
             GlobalControl.Instance.Moneta2 = false;
             GlobalControl.Instance.Moneta3 = false;
             GlobalControl.Instance.Moneta4 = false;
+            GlobalControl.Instance.Lv3Timer = Lv3Timer;
         }
     }
     
@@ -270,5 +272,6 @@ public class SaveStateLv3 : MonoBehaviour
     public void ReloadLv3()
     {
         SceneManager.LoadScene("Lv3");
+        
     }
 }
