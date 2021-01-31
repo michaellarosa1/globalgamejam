@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using UnityEngine.Events;
+
 public class SaveStateLv3 : MonoBehaviour
 {
     public Animator AnimatorCassa1;
@@ -40,6 +40,8 @@ public class SaveStateLv3 : MonoBehaviour
 
     public GameObject DoorLv3EndObj;
     public GameObject Clessidra;
+
+    public UnityEvent GameOver;
     
     private float Lv3Timer;
     private float Lv3TimeReset;
@@ -271,7 +273,6 @@ public class SaveStateLv3 : MonoBehaviour
 
     public void ReloadLv3()
     {
-        SceneManager.LoadScene("Lv3");
-        
+        if (GameOver != null)GameOver.Invoke();
     }
 }
