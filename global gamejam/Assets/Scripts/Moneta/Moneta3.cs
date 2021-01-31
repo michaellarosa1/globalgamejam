@@ -8,12 +8,10 @@ public class Moneta3 : MonoBehaviour
     public bool Moneta03;
     public bool MonetaPresa;
     // Start is called before the first frame update
-    private void OnEnable() 
-    {
-        
-    }
+    
     void Start()
-    {   Moneta03 = GlobalControl.Instance.Moneta2;
+    {  
+        Moneta03 = GlobalControl.Instance.Moneta3;
         if (MonetaPresa)
         {
             if (Moneta03)
@@ -36,6 +34,7 @@ public class Moneta3 : MonoBehaviour
                 Moneta1Obj.SetActive(true);  
             }
         }
+
     }
 
     // Update is called once per frame

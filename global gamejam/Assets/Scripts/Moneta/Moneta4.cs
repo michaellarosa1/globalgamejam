@@ -13,7 +13,7 @@ public class Moneta4 : MonoBehaviour
         
     }
     void Start()
-    {   Moneta04 = GlobalControl.Instance.Moneta2;
+    {   Moneta04 = GlobalControl.Instance.Moneta4;
         if (MonetaPresa)
         {
             if (Moneta04)
