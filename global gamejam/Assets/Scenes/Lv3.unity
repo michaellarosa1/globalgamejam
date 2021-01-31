@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca00ab9dd0275084d803a73fbf7ff1d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScenesName: 
+  ScenesName: endinggame
 --- !u!65 &56416407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43557,12 +43557,12 @@ PrefabInstance:
     - target: {fileID: 379698743673143885, guid: 2d2229bcdf7942049a1e7f0bf6e6f6b5,
         type: 3}
       propertyPath: Lv3Timer
-      value: 20
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 379698743673143885, guid: 2d2229bcdf7942049a1e7f0bf6e6f6b5,
         type: 3}
       propertyPath: Lv3TimeReset
-      value: 20
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 379698743673143886, guid: 2d2229bcdf7942049a1e7f0bf6e6f6b5,
         type: 3}
