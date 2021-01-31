@@ -39,6 +39,9 @@ public class SaveStateLv3 : MonoBehaviour
     public bool Moneta4;
 
     public Slider timerSlider;
+
+    public GameObject DoorLv3EndObj;
+    
     private float Lv3TimeReset;
     // Start is called before the first frame update
     
@@ -129,6 +132,15 @@ public class SaveStateLv3 : MonoBehaviour
         if(risposta12)
         {
             AnimatorCassa12.SetBool(NameOfParameterBool, true);
+        }
+
+        if(Moneta1 && Moneta2 && Moneta3 && Moneta4)
+        {
+            DoorLv3EndObj.SetActive(true);
+        }
+        else
+        {
+            DoorLv3EndObj.SetActive(false);
         }
 
         if(Lv3Timer <= 0)
