@@ -167,6 +167,106 @@ MonoBehaviour:
   Moneta1Obj: {fileID: 1971196388}
   Moneta03: 0
   MonetaPresa: 0
+--- !u!1 &56416403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56416404}
+  - component: {fileID: 56416407}
+  - component: {fileID: 56416406}
+  - component: {fileID: 56416405}
+  m_Layer: 0
+  m_Name: ExitAndGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56416404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56416403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 121.9, z: -870.3}
+  m_LocalScale: {x: 202.8788, y: 234.1702, z: 57.0517}
+  m_Children: []
+  m_Father: {fileID: 1312344406}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &56416405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56416403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130392cde0beef04c8f1a50afb0acd24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 56416406}
+        m_MethodName: changeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 611890329}
+        m_MethodName: saveState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  actionUscita:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerTag: Player
+--- !u!114 &56416406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56416403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca00ab9dd0275084d803a73fbf7ff1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScenesName: 
+--- !u!65 &56416407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56416403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &68749313
 GameObject:
   m_ObjectHideFlags: 0
@@ -18388,6 +18488,46 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 997964744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1012043096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8558707846660686791, guid: e6ed9a20d3f5d5d43929eff6c3e1a3f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8058269130986716389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1012043100
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012043096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 39.2
+  m_Height: 146.33344
+  m_Direction: 1
+  m_Center: {x: -0.0000076293945, y: -2.524355e-29, z: -0.000009536743}
+--- !u!1 &1021619367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4164626611961236416, guid: e6ed9a20d3f5d5d43929eff6c3e1a3f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8058269130986716389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1021619371
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021619367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 39.2
+  m_Height: 146.33344
+  m_Direction: 1
+  m_Center: {x: -0.0000057220473, y: 7.5730647e-29, z: -3.410605e-13}
 --- !u!1 &1049019041
 GameObject:
   m_ObjectHideFlags: 0
@@ -18619,6 +18759,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233023326}
   m_Mesh: {fileID: 2060405349869645336, guid: f0bf5fd2732a7ef4a9d39e106296fb95, type: 3}
+--- !u!1 &1238027571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3106986072056971968, guid: e6ed9a20d3f5d5d43929eff6c3e1a3f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8058269130986716389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1238027575
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238027571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 39.2
+  m_Height: 146.33344
+  m_Direction: 1
+  m_Center: {x: -0.000028610235, y: 3.2816614e-28, z: 0.0000038146968}
 --- !u!1001 &1245457719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30727,6 +30887,26 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 3072738204214441757}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1413714366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 632325481302478399, guid: e6ed9a20d3f5d5d43929eff6c3e1a3f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8058269130986716389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1413714370
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413714366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 39.2
+  m_Height: 146.33344
+  m_Direction: 1
+  m_Center: {x: 0.0000076293927, y: 3.7865323e-28, z: 0.000028610237}
 --- !u!1 &1529475347
 GameObject:
   m_ObjectHideFlags: 0
