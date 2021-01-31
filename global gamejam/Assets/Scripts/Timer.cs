@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
 
     private bool stopTimer;
     private float gameTimeReset;
+    
 
     
     
@@ -41,6 +42,7 @@ public class Timer : MonoBehaviour
             stopTimer = true;
             Reload();
             gameTime = gameTimeReset;
+            gameObject.SetActive(true);
         }
 
         if(stopTimer == false)
@@ -55,7 +57,7 @@ public class Timer : MonoBehaviour
     {
         if (stopTimer == true)
         {
-            SceneManager.LoadScene("Lv1");
+            SceneManager.LoadScene("GameOver");
             
         }
     }
