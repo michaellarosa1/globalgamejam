@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class SaveState : MonoBehaviour
 {
@@ -23,7 +22,6 @@ public class SaveState : MonoBehaviour
     public bool Moneta3;
     public bool Moneta4;
 
-    public Slider timerSlider;
     private float Lv3TimeReset;
     // Start is called before the first frame update
     
@@ -46,15 +44,12 @@ public class SaveState : MonoBehaviour
         Moneta2 = GlobalControl.Instance.Moneta2;
         Moneta3 = GlobalControl.Instance.Moneta3;
         Moneta4 = GlobalControl.Instance.Moneta4;
-        timerSlider.maxValue = Lv3TimeReset;
-        timerSlider.value = Lv3Timer;
     }
 
     // Update is called once per frame
     void Update()
     {
         Lv3Timer = Lv3Timer - Time.deltaTime;
-        timerSlider.value = Lv3Timer;
 
         if(Lv3Timer <= 0)
         {
